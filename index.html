@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0a">
+  <meta name="description"
+    content="Aura Luxe Atelier — bespoke furniture, architectural interiors and private commissions.">
+  <title>AURA LUXE ATELIER — Bespoke Furniture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Aura Luxe Atelier home">
+        <span class="brand-mark"><i data-lucide="compass"></i></span>
+        <span class="brand-type"><b>AURA <em>LUXE</em></b><small>BESPOKE ATELIER</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#collections">Collections</a>
+        <a href="#services">Atelier</a>
+        <a href="#about">Philosophy</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <a class="nav-cta" href="#contact">Book a consultation <i data-lucide="arrow-up-right"></i></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#collections">Collections</a><a href="#services">Atelier</a><a href="#about">Philosophy</a>
+      <a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Featured collection">
+      <div class="hero-media">
+        <div class="hero-slide is-active">
+          <img
+            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;w=2200&amp;q=82"
+            alt="SCULPTED HARMONY" loading="eager" fetchpriority="high">
+        </div>
+        <div class="hero-slide ">
+          <img
+            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&amp;fit=crop&amp;w=2200&amp;q=82"
+            alt="RAW TIMBER" loading="lazy" fetchpriority="auto">
+        </div>
+        <div class="hero-slide ">
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=2200&amp;q=82"
+            alt="BESPOKE FORMS" loading="lazy" fetchpriority="auto">
+        </div>
+      </div>
+      <div class="hero-vignette"></div>
+      <div class="hero-orb" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <span class="eyebrow"><i data-lucide="sparkles"></i><span id="heroTag">CURATED ARCHITECTURAL
+              COLLECTION</span></span>
+          <h1><span id="heroTitle">SCULPTED HARMONY</span><br><em id="heroAccent">FOR MINDFUL SPACES</em></h1>
+          <p id="heroDesc">Handcrafted furniture designed with timeless organic textures, raw American walnut timber,
+            and bespoke Italian upholstery for discerning residential estates.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#gallery">Explore masterpieces <i data-lucide="arrow-up-right"></i></a>
+            <a class="btn btn-ghost" href="#services">View atelier services <i data-lucide="layers-3"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="slide-nav" aria-label="Hero slides">
+            <button class="slide-btn is-active" data-slide="0"><span>01</span><b>CURATED ARCHITECTURAL
+                COLLECTION</b></button><button class="slide-btn " data-slide="1"><span>02</span><b>NORDIC
+                PURITY</b></button><button class="slide-btn " data-slide="2"><span>03</span><b>MONUMENTAL PRIVATE
+                COMMISSIONS</b></button>
+          </div>
+          <div class="hero-arrows">
+            <button id="prevHero" aria-label="Previous slide"><i data-lucide="arrow-left"></i></button>
+            <button id="nextHero" aria-label="Next slide"><i data-lucide="arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Atelier specialties">
+      <div class="marquee-track">
+        <span>AMERICAN WALNUT</span><i>✦</i><span>ITALIAN LEATHER</span><i>✦</i><span>ARCHITECTURAL
+          JOINERY</span><i>✦</i><span>PRIVATE COMMISSIONS</span><i>✦</i>
+        <span>AMERICAN WALNUT</span><i>✦</i><span>ITALIAN LEATHER</span><i>✦</i><span>ARCHITECTURAL
+          JOINERY</span><i>✦</i><span>PRIVATE COMMISSIONS</span>
+      </div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <div class="container">
+        <div class="section-head split reveal">
+          <div><span class="eyebrow plain">01 — COLLECTIONS</span>
+            <h2>Objects with <em>presence.</em></h2>
+          </div>
+          <p>Furniture conceived as part of the architecture — quiet silhouettes, honest materials and details that
+            reveal themselves over time.</p>
+        </div>
+
+        <div class="collection-tabs" id="collectionTabs">
+          <button class="collection-tab is-active" data-category="all">All Masterpieces</button><button
+            class="collection-tab " data-category="living">Living Room</button><button class="collection-tab "
+            data-category="dining">Dining &amp; Bars</button><button class="collection-tab "
+            data-category="lounge">Chairs &amp; Lounges</button><button class="collection-tab "
+            data-category="bedroom">Bedrooms</button><button class="collection-tab " data-category="lighting">Accent
+            &amp; Lighting</button>
+        </div>
+
+        <div class="showcase reveal">
+          <div class="showcase-image"><img id="showcaseImage"
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;w=1400&amp;q=82"
+              alt="Collection showcase" loading="lazy"><span class="image-label" id="showcaseBadge">MASTERPIECE
+              ARCHIVE</span></div>
+          <div class="showcase-content">
+            <span class="eyebrow plain" id="showcaseMeta">Comprehensive Atelier Division</span>
+            <h3 id="showcaseTitle">ALL MASTERPIECES<em id="showcaseAccent">&amp; ARCHITECTURAL FORMS</em></h3>
+            <p id="showcaseText">Our complete repository of handcrafted residential monoliths. Each piece unites aged
+              European timber, cold-rolled brass accents, and minimalist geometry.</p>
+            <div class="specs">
+              <div><small>Joinery</small><b id="specOne">Mortise &amp; Tenon</b></div>
+              <div><small>Material</small><b id="specTwo">90-Day Kiln Aged</b></div>
+              <div><small>Studio</small><b>Chandigarh Atelier</b></div>
+            </div>
+            <a class="text-link" href="#gallery">View collection <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="eyebrow plain">02 — THE ATELIER</span>
+          <h2>Craft, <em>without compromise.</em></h2>
+          <p>From first sketch to white-glove installation, every commission moves through a considered sequence of
+            design, material and making.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal" data-service="0" tabindex="0">
+            <div class="service-number">001</div>
+            <div class="service-icon"><i data-lucide="ruler"></i></div>
+            <h3>BESPOKE FURNITURE DESIGN</h3>
+            <p>Tailor-made structural pieces molded to exact interior floor plans with artisanal wood cuts, custom
+              proportions, and distinctive silhouette identity.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="1" tabindex="0">
+            <div class="service-number">002</div>
+            <div class="service-icon"><i data-lucide="armchair"></i></div>
+            <h3>ERGONOMIC LOUNGING</h3>
+            <p>Anatomically engineered recliners, lounge chairs, and modular sofas delivering pristine postural support
+              without compromising visual poetry.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="2" tabindex="0">
+            <div class="service-number">003</div>
+            <div class="service-icon"><i data-lucide="layout-grid"></i></div>
+            <h3>ARCHITECTURAL PLANNING</h3>
+            <p>Comprehensive volumetric space planning ensuring circulation, natural day-lighting, and silhouette
+              balance throughout residential suites.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="3" tabindex="0">
+            <div class="service-number">004</div>
+            <div class="service-icon"><i data-lucide="trees"></i></div>
+            <h3>SUSTAINABLE TIMBER FSC</h3>
+            <p>FSC-certified European Oak, reclaimed American Walnut, and kiln-dried Teak harvested conscientiously to
+              honor environmental harmony.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="4" tabindex="0">
+            <div class="service-number">005</div>
+            <div class="service-icon"><i data-lucide="layers"></i></div>
+            <h3>HAUTE UPHOLSTERY</h3>
+            <p>Sumptuous bouclé, natural top-grain Italian leathers, and woven linen fabrics hand-stitched with
+              double-piped borders and feather-down cores.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="5" tabindex="0">
+            <div class="service-number">006</div>
+            <div class="service-icon"><i data-lucide="box"></i></div>
+            <h3>3D PHOTOREAL RENDERING</h3>
+            <p>Precision ray-traced spatial simulations allowing our patrons to inspect lighting angles, material grain,
+              and proportions before crafting begins.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="6" tabindex="0">
+            <div class="service-number">007</div>
+            <div class="service-icon"><i data-lucide="sparkles"></i></div>
+            <h3>HERITAGE RESTORATION</h3>
+            <p>Dedicated conservation of mid-century classics and ancestral furniture utilizing cold-pressed botanical
+              oils, joinery preservation, and French polish.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="service-card reveal" data-service="7" tabindex="0">
+            <div class="service-number">008</div>
+            <div class="service-icon"><i data-lucide="shield-check"></i></div>
+            <h3>WHITE-GLOVE INSTALLATION</h3>
+            <p>Unblemished on-site delivery, leveling, architectural assembly, and post-installation placement handled
+              exclusively by our certified atelier crew.</p>
+            <span class="service-link">Explore discipline <i data-lucide="arrow-up-right"></i></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&q=82"
+            alt="Master craftsman and modern chair" loading="lazy">
+          <div class="about-float"><span>THE WORKSHOP</span><b>Material first.<br>Always.</b></div>
+          <div class="about-stamp">AURA<br><span>ATELIER</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="eyebrow plain">03 — PHILOSOPHY</span>
+          <h2>Where architecture meets <em>tactile harmony.</em></h2>
+          <p class="lead">Aura Luxe marries Scandinavian restraint with rich mid-century warmth. We design against
+            short-lived trends and toward silhouettes that can belong to a room for decades.</p>
+          <p>Every dining contour, headboard and credenza is developed around proportion, material honesty and the way a
+            space is actually lived in.</p>
+          <div class="metrics">
+            <div><strong>16<span>+</span></strong><small>Years of craft</small></div>
+            <div><strong>14<span>K</span></strong><small>Curated spaces</small></div>
+            <div><strong>99.6<span>%</span></strong><small>Patron satisfaction</small></div>
+          </div>
+          <a class="btn btn-gold" href="#contact">Visit the studio <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head split reveal">
+          <div><span class="eyebrow plain">04 — GALLERY</span>
+            <h2>The <em>masterpieces.</em></h2>
+          </div>
+          <p>Explore selected furniture studies from the atelier. Tap any piece for material notes, dimensions and
+            commission details.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-card reveal" data-category="lounge" data-index="0">
+            <button class="gallery-media" type="button" aria-label="Inspect THE NOCCE BOUCLE ARMCHAIR">
+              <img
+                src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="THE NOCCE BOUCLE ARMCHAIR" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Chairs &amp; Lounges</span><b>001</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>THE NOCCE BOUCLE ARMCHAIR</strong><small>Meticulously steam-bent solid
+                  American walnut contours enveloped in heavy nubby bouclé fabric. Designed for deep ergonomic rest and
+                  sculptural spatial presence.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="living" data-index="1">
+            <button class="gallery-media" type="button" aria-label="Inspect KIYOTO LOWLINE COFFEE PLINTH">
+              <img
+                src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="KIYOTO LOWLINE COFFEE PLINTH" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Living Room</span><b>002</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>KIYOTO LOWLINE COFFEE PLINTH</strong><small>A low-slung architectural
+                  monolith crafted from smoked ash wood. Features an integrated recessed brass reveal that produces an
+                  elegant floating illusion.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="2">
+            <button class="gallery-media" type="button" aria-label="Inspect AALTO MINIMALIST BEDSTEAD">
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="AALTO MINIMALIST BEDSTEAD" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>003</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>AALTO MINIMALIST BEDSTEAD</strong><small>Platform bed with cantilevered
+                  oak frame, integrated warm LED perimeter backlighting, and a hand-stitched aniline suede
+                  headboard.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="dining" data-index="3">
+            <button class="gallery-media" type="button" aria-label="Inspect THE SOLSTICE ELLIPTICAL TABLE">
+              <img
+                src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="THE SOLSTICE ELLIPTICAL TABLE" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Dining &amp; Bars</span><b>004</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>THE SOLSTICE ELLIPTICAL TABLE</strong><small>Honed Roman Travertine
+                  stone slab resting on dual sculpted solid walnut fluted pedestals. Comfortably hosts 8 to 10 dinner
+                  patrons.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="living" data-index="4">
+            <button class="gallery-media" type="button" aria-label="Inspect VERVE FLUTED CREDENZA">
+              <img
+                src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="VERVE FLUTED CREDENZA" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Living Room</span><b>005</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>VERVE FLUTED CREDENZA</strong><small>Continuous vertical tambour
+                  louvers gliding around rounded corners. Features solid brass turned legs and soft-touch velvet
+                  interior linings.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="lighting" data-index="5">
+            <button class="gallery-media" type="button" aria-label="Inspect LUMINA CERAMIC PENDANTS">
+              <img
+                src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="LUMINA CERAMIC PENDANTS" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Accent &amp; Lighting</span><b>006</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>LUMINA CERAMIC PENDANTS</strong><small>Hand-thrown unglazed terracotta
+                  clay bells with brushed champagne brass fittings. Emits a comforting, warm 2700K downward pool of
+                  light.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="lounge" data-index="6">
+            <button class="gallery-media" type="button" aria-label="Inspect ARCUS CURVED VELVET SETTEE">
+              <img
+                src="https://images.unsplash.com/photo-1580481077195-c3a821a58875?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="ARCUS CURVED VELVET SETTEE" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Chairs &amp; Lounges</span><b>007</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>ARCUS CURVED VELVET SETTEE</strong><small>Curvilinear two-seater settee
+                  swathed in muted olive Belgian velvet, supported by recessed dark walnut plinth
+                  architecture.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="living" data-index="7">
+            <button class="gallery-media" type="button" aria-label="Inspect BRONTE LEATHER ACCENT CHAIR">
+              <img
+                src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="BRONTE LEATHER ACCENT CHAIR" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Living Room</span><b>008</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>BRONTE LEATHER ACCENT CHAIR</strong><small>Hand-stitched
+                  vegetable-tanned saddle leather sling chair with blackened forged steel framing and hand-turned brass
+                  finials.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="dining" data-index="8">
+            <button class="gallery-media" type="button" aria-label="Inspect NARA SMOKED OAK TABLE">
+              <img
+                src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="NARA SMOKED OAK TABLE" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Dining &amp; Bars</span><b>009</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>NARA SMOKED OAK TABLE</strong><small>Architectural dining centerpiece
+                  with beveled chamfers, traditional Japanese mortise &amp; tenon joints, and hardwax oil
+                  finish.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="9">
+            <button class="gallery-media" type="button" aria-label="Inspect KYOTO WALNUT NIGHTSTAND">
+              <img
+                src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="KYOTO WALNUT NIGHTSTAND" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>010</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>KYOTO WALNUT NIGHTSTAND</strong><small>Minimalist cantilever bedside
+                  plinth crafted from prime kiln-dried walnut featuring soft-closing felt-lined interior
+                  compartments.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="lighting" data-index="10">
+            <button class="gallery-media" type="button" aria-label="Inspect AURELIA ALABASTER SCONCE">
+              <img
+                src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="AURELIA ALABASTER SCONCE" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Accent &amp; Lighting</span><b>011</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>AURELIA ALABASTER SCONCE</strong><small>Naturally veined Spanish
+                  alabaster luminaire emitting a soft diffuse halo with antique burnished bronze wall
+                  mounting.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="11">
+            <button class="gallery-media" type="button" aria-label="Inspect VALENTINA UPHOLSTERED BED">
+              <img
+                src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="VALENTINA UPHOLSTERED BED" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>012</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>VALENTINA UPHOLSTERED BED</strong><small>Generously cushioned bedstead
+                  enveloped in tactile Belgian bouclé. Engineered with reinforced internal beech slats for silent
+                  structural support.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="12">
+            <button class="gallery-media" type="button" aria-label="Inspect SERAPHINA TALLBOY CHEST">
+              <img
+                src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="SERAPHINA TALLBOY CHEST" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>013</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>SERAPHINA TALLBOY CHEST</strong><small>Solid smoked oak tallboy chest
+                  boasting 6 soft-touch dovetail drawers and solid cold-cast patinated bronze hardware.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="13">
+            <button class="gallery-media" type="button" aria-label="Inspect ZENITH LOW PLATFORM BED">
+              <img
+                src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="ZENITH LOW PLATFORM BED" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>014</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>ZENITH LOW PLATFORM BED</strong><small>Japandi-inspired low-profile bed
+                  plinth with seamless perimeter ledge and integrated touch-sensitive LED reading
+                  sconces.</small></span>
+            </button>
+          </article>
+          <article class="gallery-card reveal" data-category="bedroom" data-index="14">
+            <button class="gallery-media" type="button" aria-label="Inspect SOLACE ANILINE LEATHER BED">
+              <img
+                src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                alt="SOLACE ANILINE LEATHER BED" loading="lazy" decoding="async">
+              <span class="gallery-shade"></span>
+              <span class="gallery-top"><span>Bedrooms</span><b>015</b></span>
+              <span class="gallery-open"><i data-lucide="arrow-up-right"></i></span>
+              <span class="gallery-copy"><strong>SOLACE ANILINE LEATHER BED</strong><small>Channel-tufted Italian
+                  semi-aniline leather bed frame anchored by brushed champagne brass cylinder footings.</small></span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="review-header reveal"><span class="eyebrow plain">05 — PATRON NOTES</span>
+          <h2>Words from the <em>room.</em></h2>
+          <div class="rating"><b>★★★★★</b><span>Private client reviews</span></div>
+        </div>
+        <div class="review-shell reveal">
+          <div class="reviews-track" id="reviewsTrack">
+            <article class="review-slide is-active" aria-hidden="false">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“The walnut, brass inlays and white-glove installation exceeded what we have seen even in
+                Milan showrooms. Every piece integrated beautifully with the architectural layout.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Alisha Kapoor" loading="lazy">
+                <div><strong>Alisha Kapoor</strong><span>Principal Architect, Kapoor Design Atelier</span></div>
+              </div>
+            </article>
+            <article class="review-slide " aria-hidden="true">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“The photoreal 3D preview was remarkably precise. Watching the artisans assemble the fluted
+                walnut columns on site felt like bespoke architectural engineering.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Vikramaditya Oberoi" loading="lazy">
+                <div><strong>Vikramaditya Oberoi</strong><span>Hospitality Developer</span></div>
+              </div>
+            </article>
+            <article class="review-slide " aria-hidden="true">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“Their restoration work preserved the character of a vintage piece while giving the upholstery
+                a contemporary language. The result feels collected rather than manufactured.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Dr. Devika Sharma" loading="lazy">
+                <div><strong>Dr. Devika Sharma</strong><span>Art Collector &amp; Patron</span></div>
+              </div>
+            </article>
+            <article class="review-slide " aria-hidden="true">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“The lowline plinth brings an unusual sense of serenity. The material honesty and restrained
+                detailing make it feel closer to architecture than ordinary furniture.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Rohit Malhotra" loading="lazy">
+                <div><strong>Rohit Malhotra</strong><span>Interior Consultant</span></div>
+              </div>
+            </article>
+            <article class="review-slide " aria-hidden="true">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“From specification to installation, the process felt considered. The bouclé texture and
+                ergonomic contour have become a favorite part of our studio.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Meera Sen" loading="lazy">
+                <div><strong>Meera Sen</strong><span>Creative Director</span></div>
+              </div>
+            </article>
+            <article class="review-slide " aria-hidden="true">
+              <div class="review-stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>“The Aalto bedstead transformed the master suite into a tranquil architectural sanctuary. The
+                floating base creates an extraordinary sense of lightness.”</blockquote>
+              <div class="review-person">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=crop&amp;w=150&amp;q=80"
+                  alt="Kabir Singhania" loading="lazy">
+                <div><strong>Kabir Singhania</strong><span>Residential Estate Owner</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="review-controls"><button id="prevReview" aria-label="Previous review"><i
+                data-lucide="arrow-left"></i></button>
+            <div id="reviewDots"></div><button id="nextReview" aria-label="Next review"><i
+                data-lucide="arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow plain">06 — PRIVATE COMMISSIONS</span>
+          <h2>Let's make something <em>quietly extraordinary.</em></h2>
+          <p>Tell us about your space, preferred materials or the piece you have in mind. Our design team will respond
+            with the next step.</p>
+          <div class="contact-details">
+            <a href="mailto:studio@auraluxe.example"><span>Studio</span>studio@auraluxe.example</a>
+            <a href="tel:+911234567890"><span>Telephone</span>+91 12345 67890</a>
+            <div><span>Atelier</span>Chandigarh, India</div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row"><label>Full name<input name="name" type="text" placeholder="Your name"
+                required></label><label>Email<input name="email" type="email" placeholder="you@example.com"
+                required></label></div>
+          <label>Project type<select name="project">
+              <option>Custom furniture</option>
+              <option>Residential collection</option>
+              <option>Hospitality project</option>
+              <option>Restoration</option>
+              <option>Interior collaboration</option>
+            </select></label>
+          <label>Tell us about the project<textarea name="message" rows="5"
+              placeholder="A few details about your space, timeline and requirements…" required></textarea></label>
+          <button class="btn btn-gold" type="submit">Transmit inquiry <i data-lucide="arrow-up-right"></i></button>
+          <small>This demo form shows a confirmation locally; connect it to your backend/email service for real
+            submissions.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><i
+              data-lucide="compass"></i></span><span class="brand-type"><b>AURA <em>LUXE</em></b><small>BESPOKE
+              ATELIER</small></span></a>
+        <p>Furniture with architectural intent. Crafted for spaces with a point of view.</p>
+      </div>
+      <div>
+        <h3>Explore</h3><a href="#collections">Collections</a><a href="#services">Atelier services</a><a
+          href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h3>Studio</h3><a href="#about">Philosophy</a><a href="#contact">Private commissions</a><a href="#contact">Visit
+          Chandigarh</a>
+      </div>
+      <div>
+        <h3>Dispatch</h3>
+        <p>Occasional notes on materials, new editions and studio work.</p>
+        <form id="newsletterForm"><input type="email" name="email" placeholder="Email address" required><button
+            aria-label="Subscribe"><i data-lucide="arrow-up-right"></i></button></form>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Aura Luxe Atelier </span><span>Designed for modern
+        living.Created By<a href="https://liin-coders.github.io/liinstudio/"> <b>LiinStudio</b></a></span><span><a
+          href="#home">Back to top ↑</a></span></div>
+  </footer>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="product"></div>
+    <div class="modal-card product-modal">
+      <button class="modal-close" data-close="product" aria-label="Close"><i data-lucide="x"></i></button>
+      <div class="modal-image"><img id="productImage" src="" alt=""></div>
+      <div class="modal-info"><span class="eyebrow plain" id="productTag"></span>
+        <h2 id="productTitle"></h2>
+        <p id="productDesc"></p>
+        <div class="modal-meta"><span>Edition</span><b id="productEdition"></b></div><a class="btn btn-gold"
+          href="#contact" data-close="product">Request this piece <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="serviceModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="service"></div>
+    <div class="modal-card service-modal">
+      <button class="modal-close" data-close="service" aria-label="Close"><i data-lucide="x"></i></button>
+      <div class="service-modal-head">
+        <div class="service-icon" id="serviceModalIcon"></div><span class="eyebrow plain">ATELIER DISCIPLINE</span>
+        <h2 id="serviceTitle"></h2>
+        <p id="serviceSummary"></p>
+      </div>
+      <div class="service-modal-body">
+        <div><small>Typical turnaround</small><b id="serviceTime"></b></div>
+        <div><small>Material / output</small><b id="serviceGrade"></b></div>
+      </div>
+      <ul id="serviceSteps"></ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"><i data-lucide="check-circle-2"></i>
+    <div><b id="toastTitle">Sent</b><span id="toastText"></span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
